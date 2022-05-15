@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mini Word</title>
+        <style>
+            .centered {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+        </style>
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="centered">
+            <div class="container">
+                <p class="p-2" id="paragraph">Test</p>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <input
+                            class="m-2 form-control form-control-color"
+                            type="color"
+                            name="color"
+                            id="colorInput"
+                            style="max-width: 100%"
+                        />
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <input
+                            class="m-2 form-control"
+                            type="number"
+                            name="number"
+                            id="numberInput"
+                            placeholder="16"
+                        />
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <select
+                            class="m-2 form-select"
+                            name="font"
+                            id="fontSelect"
+                        >
+                            <option>Select a font</option>
+                            <option value="Times New Roman">
+                                Times New Roman
+                            </option>
+                            <option value="Arial">Arial</option>
+                            <option value="Calibri">Calibri</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
